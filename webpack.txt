@@ -1,0 +1,25 @@
+https://youtu.be/DW28sSQxBO8
+
+src - папка з моїми робочими файлами
+dist - папка з генеруэмим результатом
+
+
+копіюю в нову папку src папку і папку dist і webpack.config.js
+src
+dist
+webpack.config.js
+
+в терміналі прописуюю 
+npm init -y  
+генерується package.json
+
+далі прописую
+npm i webpack webpack-cli
+генерується package-lock.json  
+ 
+
+в файлі package.json замінити
+"build": "webpack --config webpack.config.js"
+
+npm run build  
+ 

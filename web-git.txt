@@ -1,0 +1,19 @@
+копіюю папку копі_зіс
+створюю репозиторій на гітхабі
+запускаю білд
+npm run build 
+перевіряю через включення сервера
+npx webpack serve
+ініціалізую гіт
+git init
+перевіряю чи є гіт ігнор
+добавляю всі файли через гіт адд -А
+git add -A
+комічу
+git commit -a -m"qwe"
+підключаю репозиторій
+git remote add origin https://github.com/Nazunak/test-web-git.git
+git branch -M main
+git push -u origin main
+пушу
+git push
