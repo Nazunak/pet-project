@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- бургер меню  -->
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <!-- <img src="/img/logo.png" alt="" class="header__logo-img"> -->
+                    <p class="header__logo-p">fotoprokat<span class="header__logo-span">24</span></p>
+                </a>
+                    <div class="header__burger">
+                        <span class="header__burger-span"></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__list-li">
+                                <a href="#" class="header__list-a">Каталог</a>
+                            </li>
+                            <li class="header__list-li">
+                                <a href="#" class="header__list-a">Про компанію</a>
+                            </li>
+                            <li class="header__list-li">
+                                <a href="#" class="header__list-a">Правила</a>
+                            </li>
+                            <li class="header__list-li">
+                                <a href="#" class="header__list-a">Новини</a>
+                            </li>
+                            <li class="header__list-li">
+                                <a href="#" class="header__list-a">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header__icons-block">
+                        <div class="header__icons-item">
+                            <a href="#" class="header__icons-a">
+                                <img src="./assets/Vector.png" alt="" class="header__icons-img">
+                            </a>
+                        </div>
+                    </nav>
+            </div>
+        </div>      
+    </header>
+    <img src="./assets/flaticon-code-lapetop.png" alt="" class="header__icons-imgs">
+    <!-- кінець бургера  -->
     <!-- приклад підключення картинки -->
-    <img src="" id="mainImage">
+    <!-- <img src="" id="mainImage"> -->
     <!-- приклад підключення картинки -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </body>
 </html>
