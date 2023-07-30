@@ -44,11 +44,30 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+	&:hover {
+		border-bottom: 2px solid #60B021;
+	}
+}
+
+.hover-exp:hover {
+	height: 100%;
+	border-bottom: 2px solid #60B021;
 }
 
 .container-header {
 	width: 1080px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;
+	padding: 0 15px;
+}
+
+.header__menu {
+	display: flex;
+	align-items: center;
+	margin-left: 200px;
+	height: 100%;
 }
 
 
@@ -68,6 +87,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	height: 75px;
 }
 
 .header:before {
@@ -84,7 +104,7 @@
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	height: 75px;
+	height: 100%;
 	align-items: center;
 }
 
@@ -103,6 +123,8 @@
 	display: flex;
 	position: relative;
 	z-index: 3;
+	height: 100%;
+	align-items: center;
 }
 
 .header__list-li {
@@ -110,6 +132,9 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	margin: 0px 0px 0px 20px;
+	display: flex;
+	align-items: center;
+	height: 100%;
 	&:first-child {
 		margin: 0px;
 	}
@@ -123,6 +148,9 @@
 	letter-spacing: 0em;
 	text-align: left;
 	color: #000;
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
 .header__list-a:hover {
@@ -136,6 +164,10 @@
 	line-height: 18px;
 	letter-spacing: 0em;
 	text-align: left;
+	border-bottom: 2px solid;
+	// background-image: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+	// -webkit-background-clip: text;
+  	// -webkit-text-fill-color: transparent;
 }
 
 .header__burger {
@@ -220,4 +252,13 @@
 }
 
 /* кінець бургера */
+
+.main {
+	margin-top: 75px;
+}
+.banner__header {
+	background: url('/src/assets/header.png') 0 0/cover no-repeat;
+	max-width: 100%;
+	height: 650px;
+}
 
