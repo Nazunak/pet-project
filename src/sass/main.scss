@@ -74,7 +74,7 @@
 /* Бургер меню */
 
 .container{
-	width: 1080px;
+	width: 1145px;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
@@ -88,6 +88,7 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 75px;
+	background: #ffff;
 }
 
 .header:before {
@@ -260,5 +261,95 @@
 	background: url('/src/assets/header.png') 0 0/cover no-repeat;
 	max-width: 100%;
 	height: 650px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
 }
+
+.baner {
+	position: relative;
+}
+
+.title-first__span {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 61px;
+	letter-spacing: 0em;
+	text-align: left;
+	background-image: linear-gradient(270deg, #8EE901 0%, #4F9C2C 99.06%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	margin-right: 5px;
+}
+
+.title-first__p {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 61px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.baner__title {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.baner__title-first,
+.baner__title-second,
+.baner__title-third {
+	background-color: #ffff;
+	padding: 10px;
+	box-shadow: 0px 2px 6px 0px #00000026;
+	position: relative;
+}
+
+.baner__title-first {
+	max-width: 264px;
+	z-index: 3;
+}
+
+.baner__title-second {
+	max-width: 178px;
+	z-index: 2;
+}
+
+.baner__title-third {
+	max-width: 297px;
+	z-index: 1;
+}
+
+.banner__features {
+	background: #F5F5F5;
+}
+
+.banner__features-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.features-block__item {
+	padding: 40px 0px;
+	display: flex;
+	align-items: center;
+}
+
+.features-block__item-imm {
+	margin-right: 10px;
+}
+
+.features-block__item-p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-right: 30px;
+}
+
 
