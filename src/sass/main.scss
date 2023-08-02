@@ -352,4 +352,169 @@
 	margin-right: 30px;
 }
 
+.pricing {
+	margin-top: 70px;
+	padding-bottom: 40px;
+}
 
+.pricing__title {
+	text-align: center;
+}
+
+.pricing__title-h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #60B021;
+	text-transform: uppercase;
+}
+
+.pricing__title-span {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.pricing__slider {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pricing__item {
+	border: 1px solid #EFEFEF;
+	width: 350px;
+}
+
+.pricing__item-top {
+
+}
+
+.item-top__photo {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+.item-top__text {
+	text-align: center;
+}
+
+.item-top__firstname-p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.item-top__secondname-p {
+font-family: 'Ubuntu', sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: center;
+color: #75758A;
+}
+
+.pricing__item-middle {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #EFEFEF;
+}
+
+.item-middle__price {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 88px;
+	border-right: 1px solid #EFEFEF;
+	// padding: 18px 18px 0 18px;
+	&:first-child {
+		border-left: none;
+	}
+	&:last-child {
+		border-right: none;
+	}
+}
+
+.item-middle__price-p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.item-middle__price-day {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.pricing__item-bot {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.item-bot__info-button {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: center;
+	box-shadow: 0px 2px 6px 0px #00000026;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: #FFFFFF;
+	border-radius: 35px;
+	width: 140px;
+}
+
+.item-bot__bag-button {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: center;
+	box-shadow: 0px 2px 6px 0px #00000026;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+	border-radius: 35px;
+	color: #ffff;
+	width: 140px;
+	padding-left: 17px;
+}
+
+.item-bot__bag {
+	position: relative;
+}
+
+.item-bot__bag-imm {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
