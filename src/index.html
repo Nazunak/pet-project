@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title><%= htmlWebpackPlugin.options.title =%></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <!-- підключення слайдера  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- підключення слайдера  -->
 </head>
 <body>
     <!-- бургер меню  -->
@@ -141,14 +144,19 @@
                 <div class="pricing__title">
                     <h2 class="pricing__title-h2">Популярні <span class="pricing__title-span"> товари</span></h2>
                 </div>
-                    <div class="pricing__slider">
-                        <div class="pricing__item">
+                    <div class="pricing__slider image-slider swiper-container">
+                        <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="pricing__item image-slider__slide swiper-slide">
                             <div class="pricing__item-top">
-                                <div class="item-top__photo">
+                                <div class="item-top__photo image-slider__image">
                                     <img src="./assets/photo.png" alt="" class="item-top__img">
                                     <div class="item-top__icons">
-                                        <a href="./assets/compare (1).png" class="item-top__compare"></a>
-                                        <a href="./assets/star.png" class="item-top__star"></a>
+                                        <a href="#" class="item-top__compare">
+                                            <img src="./assets/compare (1).png" alt="" class="item-top__compare-img">
+                                        </a>
+                                        <a href="#" class="item-top__star">
+                                            <img src="./assets/star.png" alt="" class="item-top__compare-img">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="item-top__text">
@@ -162,19 +170,19 @@
                             </div>
                             <div class="pricing__item-middle">
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">630 Р</p>
+                                    <p class="item-middle__price-p">630 ₴</p>
                                     <p class="item-middle__price-day">Будній</p>
                                 </div>
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">750 Р</p>
+                                    <p class="item-middle__price-p">750 ₴</p>
                                     <p class="item-middle__price-day">Вихідний</p>
                                 </div>
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">4 380 Р</p>
+                                    <p class="item-middle__price-p">4 380 ₴</p>
                                     <p class="item-middle__price-day">Тиждень</p>
                                 </div>
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">12 250 Р</p>
+                                    <p class="item-middle__price-p">12 250 ₴</p>
                                     <p class="item-middle__price-day">Місяць</p>
                                 </div>
                             </div>
@@ -188,13 +196,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pricing__item">
+                        <div class="pricing__item image-slider__slide swiper-slide">
                             <div class="pricing__item-top">
-                                <div class="item-top__photo">
+                                <div class="item-top__photo image-slider__image">
                                     <img src="./assets/orig.png" alt="" class="item-top__img">
                                     <div class="item-top__icons">
-                                        <a href="./assets/compare (1).png" class="item-top__compare"></a>
-                                        <a href="./assets/star.png" class="item-top__star"></a>
+                                        <a href="#" class="item-top__compare">
+                                            <img src="./assets/compare (1).png" alt="" class="item-top__compare-img">
+                                        </a>
+                                        <a href="#" class="item-top__star">
+                                            <img src="./assets/star.png" alt="" class="item-top__compare-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-top__text">
+                                    <div class="item-top__firstname">
+                                        <p class="item-top__firstname-p">PowerShot SX620 HS</p>
+                                    </div>
+                                    <div class="item-top__secondname">
+                                        <p class="item-top__secondname-p">Cannon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing__item-middle">
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">630 ₴</p>
+                                    <p class="item-middle__price-day">Будній</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">750 ₴</p>
+                                    <p class="item-middle__price-day">Вихідний</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">4 380 ₴</p>
+                                    <p class="item-middle__price-day">Тиждень</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">12 250 ₴</p>
+                                    <p class="item-middle__price-day">Місяць</p>
+                                </div>
+                            </div>
+                            <div class="pricing__item-bot">
+                                <div class="item-bot__info">
+                                    <button class="item-bot__info-button">Детальніше</button>
+                                </div>
+                                <div class="item-bot__bag">
+                                    <img src="./assets/Group.png" alt="" class="item-bot__bag-imm">
+                                    <button class="item-bot__bag-button">В кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing__item image-slider__slide swiper-slide">
+                            <div class="pricing__item-top">
+                                <div class="item-top__photo image-slider__image">
+                                    <img src="./assets/orig (2).png" alt="" class="item-top__img">
+                                    <div class="item-top__icons">
+                                        <a href="#" class="item-top__compare">
+                                            <img src="./assets/compare (1).png" alt="" class="item-top__compare-img">
+                                        </a>
+                                        <a href="#" class="item-top__star">
+                                            <img src="./assets/star.png" alt="" class="item-top__compare-img">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="item-top__text">
@@ -234,13 +296,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pricing__item">
+                        <div class="pricing__item image-slider__slide swiper-slide">
                             <div class="pricing__item-top">
-                                <div class="item-top__photo">
-                                    <img src="./assets/orig (2).png" alt="" class="item-top__img">
+                                <div class="item-top__photo image-slider__image">
+                                    <img src="./assets/photo.png" alt="" class="item-top__img">
                                     <div class="item-top__icons">
-                                        <a href="./assets/compare (1).png" class="item-top__compare"></a>
-                                        <a href="./assets/star.png" class="item-top__star"></a>
+                                        <a href="#" class="item-top__compare">
+                                            <img src="./assets/compare (1).png" alt="" class="item-top__compare-img">
+                                        </a>
+                                        <a href="#" class="item-top__star">
+                                            <img src="./assets/star.png" alt="" class="item-top__compare-img">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="item-top__text">
@@ -254,19 +320,119 @@
                             </div>
                             <div class="pricing__item-middle">
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">630 Р</p>
+                                    <p class="item-middle__price-p">630 ₴</p>
                                     <p class="item-middle__price-day">Будній</p>
                                 </div>
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">750 Р</p>
+                                    <p class="item-middle__price-p">750 ₴</p>
                                     <p class="item-middle__price-day">Вихідний</p>
                                 </div>
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">4 380 Р</p>
+                                    <p class="item-middle__price-p">4 380 ₴</p>
                                     <p class="item-middle__price-day">Тиждень</p>
                                 </div>
                                 <div class="item-middle__price">
-                                    <p class="item-middle__price-p">12 250 Р</p>
+                                    <p class="item-middle__price-p">12 250 ₴</p>
+                                    <p class="item-middle__price-day">Місяць</p>
+                                </div>
+                            </div>
+                            <div class="pricing__item-bot">
+                                <div class="item-bot__info">
+                                    <button class="item-bot__info-button">Детальніше</button>
+                                </div>
+                                <div class="item-bot__bag">
+                                    <img src="./assets/Group.png" alt="" class="item-bot__bag-imm">
+                                    <button class="item-bot__bag-button">В кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing__item image-slider__slide swiper-slide">
+                            <div class="pricing__item-top">
+                                <div class="item-top__photo image-slider__image">
+                                    <img src="./assets/orig (2).png" alt="" class="item-top__img">
+                                    <div class="item-top__icons">
+                                        <a href="#" class="item-top__compare">
+                                            <img src="./assets/compare (1).png" alt="" class="item-top__compare-img">
+                                        </a>
+                                        <a href="#" class="item-top__star">
+                                            <img src="./assets/star.png" alt="" class="item-top__compare-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-top__text">
+                                    <div class="item-top__firstname">
+                                        <p class="item-top__firstname-p">PowerShot SX620 HS</p>
+                                    </div>
+                                    <div class="item-top__secondname">
+                                        <p class="item-top__secondname-p">Cannon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing__item-middle">
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">630 ₴</p>
+                                    <p class="item-middle__price-day">Будній</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">750 ₴</p>
+                                    <p class="item-middle__price-day">Вихідний</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">4 380 ₴</p>
+                                    <p class="item-middle__price-day">Тиждень</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">12 250 ₴</p>
+                                    <p class="item-middle__price-day">Місяць</p>
+                                </div>
+                            </div>
+                            <div class="pricing__item-bot">
+                                <div class="item-bot__info">
+                                    <button class="item-bot__info-button">Детальніше</button>
+                                </div>
+                                <div class="item-bot__bag">
+                                    <img src="./assets/Group.png" alt="" class="item-bot__bag-imm">
+                                    <button class="item-bot__bag-button">В кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing__item image-slider__slide swiper-slide">
+                            <div class="pricing__item-top">
+                                <div class="item-top__photo image-slider__image">
+                                    <img src="./assets/photo.png" alt="" class="item-top__img">
+                                    <div class="item-top__icons">
+                                        <a href="#" class="item-top__compare">
+                                            <img src="./assets/compare (1).png" alt="" class="item-top__compare-img">
+                                        </a>
+                                        <a href="#" class="item-top__star">
+                                            <img src="./assets/star.png" alt="" class="item-top__compare-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item-top__text">
+                                    <div class="item-top__firstname">
+                                        <p class="item-top__firstname-p">PowerShot SX620 HS</p>
+                                    </div>
+                                    <div class="item-top__secondname">
+                                        <p class="item-top__secondname-p">Cannon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing__item-middle">
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">630 ₴</p>
+                                    <p class="item-middle__price-day">Будній</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">750 ₴</p>
+                                    <p class="item-middle__price-day">Вихідний</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">4 380 ₴</p>
+                                    <p class="item-middle__price-day">Тиждень</p>
+                                </div>
+                                <div class="item-middle__price">
+                                    <p class="item-middle__price-p">12 250 ₴</p>
                                     <p class="item-middle__price-day">Місяць</p>
                                 </div>
                             </div>
@@ -281,7 +447,10 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- add arrows -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    </div>
             </div>
         </section>
     </main>
@@ -289,6 +458,9 @@
     <!-- приклад підключення картинки -->
     <!-- <img src="" id="mainImage"> -->
     <!-- приклад підключення картинки -->
+    <!-- підключення слайдера -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- підключення слайдера -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </body>
 </html>

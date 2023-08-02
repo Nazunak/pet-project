@@ -89,6 +89,7 @@
 	justify-content: space-between;
 	height: 75px;
 	background: #ffff;
+	box-shadow: 0px 2px 6px 0px #00000026;
 }
 
 .header:before {
@@ -395,7 +396,7 @@
 }
 
 .pricing__item-top {
-
+	position: relative;
 }
 
 .item-top__photo {
@@ -518,3 +519,81 @@ color: #75758A;
 	top: 15px;
 	left: 20px;
 }
+
+.item-top__compare-img {
+	width: 24px;
+	margin-bottom: 20px;
+}
+
+.item-top__icons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+}
+
+/* початок слайдера */
+
+.image-slider {
+	padding: 30px 0 70px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.image-slider__image {
+	text-align: center;
+}
+
+.image-slider__image img {
+	max-width: 100%;
+}
+
+.image-slider .swiper-button-prev::after{
+	color: #000;
+	font-size: small;
+}
+
+.image-slider .swiper-button-next::after {
+	color: #000;
+	font-size: small;
+}
+
+.image-slider .swiper-pagination{
+	padding-bottom: 20px;
+}
+
+.image-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color:rgb(100, 97, 97);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	box-shadow: 0px 2px 6px 0px #00000026;
+	height: 40px;
+	width: 40px;
+}
+
+.swiper-button-prev {
+	position: absolute;
+	top: 195px;
+	left: 1px;
+}
+
+.swiper-button-next {
+	position: absolute;
+	top: 195px;
+	right: 1px;
+}
+
+.image-slider__wrapper {
+	position: relative;
+}
+
+
+/* кінець слайдера */
