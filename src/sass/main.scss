@@ -906,8 +906,173 @@ color: #75758A;
 	margin-top: 40px;
 }
 
+.news {
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
 
+.news__title {
+	text-align: center;
+}
 
+.news__items {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
 
+.news__item-block {
+	width: 350px;
+	border: 1px solid #EFEFEF;
+}
 
+.news__item-top {
+	padding: 20px 0 20px 20px;
+}
+
+.news__item-p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #75758A;
+}
+
+.news__item-h4 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color:#000000;
+}
+
+.news__item-span {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #75758A;
+	margin-top: 10px;
+	display: block;
+}
+
+.news__item-reverce {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.news__item-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.news__button {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: center;
+	background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+	padding: 20px 70px;
+	color: #ffff;
+	border-radius: 40px;
+	text-transform: uppercase;
+	box-shadow: 0px 2px 6px 0px #00000026;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.map {
+	background: url('/src/assets/for\ map.png') 0 0/cover no-repeat;
+	height: 350px;
+	display: flex;
+	align-items: center;
+}
+
+.map__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.map__item {
+	width: 255px;
+	box-shadow: 0px 2px 6px 0px #00000026;
+	padding: 20px 0 20px 20px;
+	height: 140px;
+	background: #fff;
+}
+
+.map__item_p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.map__item-span {
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #75758A;
+	display: block;
+	margin: 15px 0 15px 0;
+}
+
+.map__item-a {
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #60B021;
+	text-decoration: underline;
+}
+
+.subscribe {
+	background: #515668;
+}
+
+.subscribe__items {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subscribe__mail-block {
+	display: flex;
+	align-items: center;
+}
+
+.subscribe__call-block {
+	display: flex;
+	padding-right: 70px;
+	align-items: center;
+}
+
+.subscribe__img {
+	width: 20px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.subscribe__call-img {
+	width: 20px;
+	height: 20px;
+}
+
+.subscribe__mail-p {
+	margin-left: 10px;
+}
 
