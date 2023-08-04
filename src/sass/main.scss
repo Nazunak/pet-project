@@ -1064,6 +1064,15 @@ color: #75758A;
 .subscribe__img {
 	width: 20px;
 	height: 15px;
+	// margin-right: 10px;
+	display: block;
+}
+
+.subscribe__img-border {
+	border: 1px solid #8EE901;
+	border-radius: 50%;
+	padding: 10px;
+	background: transparent;
 	margin-right: 10px;
 }
 
@@ -1076,3 +1085,60 @@ color: #75758A;
 	margin-left: 10px;
 }
 
+.subscribe__mail-pp {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #8EE901;
+}
+
+.subscribe__mail-span {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #fff;
+}
+
+.subscribe__field-block {
+	display: flex;
+	align-items: center;
+}
+
+.subscribe__field-input {
+	padding: 10px 80px 10px 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.subscribe__button {
+	padding: 12px 20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: center;
+	text-transform: uppercase;
+	background: #60B021;
+	color: #fff;
+}
+
+.subscribe__mail-p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #8EE901;
+}
