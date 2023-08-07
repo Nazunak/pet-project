@@ -1018,7 +1018,7 @@ color: #75758A;
 }
 
 .map__item-span {
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
@@ -1030,7 +1030,7 @@ color: #75758A;
 }
 
 .map__item-a {
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
@@ -1142,3 +1142,108 @@ color: #75758A;
 	text-align: left;
 	color: #8EE901;
 }
+
+.footer {
+	background: #f5f5f5;
+}
+
+.footer__block {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__social-block {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+.footer__social-img {
+	width: 45px;
+	height: 45px;
+}
+
+.footer__item {
+	width: 100px;
+	&:first-child {
+		width: 95px;
+	}
+	&:nth-child(4) {
+		width: 150px;
+	}
+	&:last-child {
+		width: 160px;
+	}
+}
+
+.footer__item-p,
+.footer__item-pp,
+.footer__item-span {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.footer__item-p {
+	padding-top: 10px;
+}
+
+.footer__item-pp {
+	padding-bottom: 10px;
+}
+
+.footer__item-span {
+	color: #75758A;
+}
+
+.footer__item-a {
+	display: block;
+}
+
+.footer__item-h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.footer__item-a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #75758A;
+	margin: 7px 0px;
+}
+
+.footer__payments-block {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: 50px;
+	align-items: center;
+}
+
+.footer__visa-img,
+.footer__visa-paypal {
+	height: 50px;
+}
+
+.footer__visa-mastercard {
+	height: 30px;
+}
+
+.footer__paypal,
+.footer__visa-mastercard {
+	margin-left: 20px;
+}
+
