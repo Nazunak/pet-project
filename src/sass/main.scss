@@ -1,11 +1,13 @@
+// міксіни
+// @use "sass:math" as *;
+// @use "sass:list" as *;
 @import "./nullstyle.scss";
-// @use "sass-functions" as sf; // Припустимо, що це ім'я вашої бібліотеки
-// @use "sass:math";
+
 
 // @function rem($px) {
-//   $result: sf.math.div($px, 16) + rem;
-//   @return $result;
-// }
+// 	$result: calc($px / 16) + rem;
+// 	@return $result;
+//   }
 
 // $maxWidth: 1440;
 // $mobWidth: 320;
@@ -23,6 +25,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 	color: #000000;
+	// font-size: clamp(rem(22), vw(40), rem(40));
 }
 
 .header__logo-span {
@@ -468,8 +471,7 @@
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 	margin-right: 5px;
-	// font-size: clamp(rem(18), vw(60), rem(60));
-	font-size: rem(60);
+	font-size: clamp(rem(18), vw(60), rem(60));
 }
 
 .title-first__p {
