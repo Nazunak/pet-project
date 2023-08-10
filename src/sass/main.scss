@@ -1,4 +1,19 @@
 @import "./nullstyle.scss";
+// @use "sass-functions" as sf; // Припустимо, що це ім'я вашої бібліотеки
+// @use "sass:math";
+
+// @function rem($px) {
+//   $result: sf.math.div($px, 16) + rem;
+//   @return $result;
+// }
+
+// $maxWidth: 1440;
+// $mobWidth: 320;
+
+// @function vw($value) {
+//   $vwValue: calc(#{$value} / #{$maxWidth} * 100vw);
+//   @return $vwValue;
+// }
 
 .header__logo-p {
 	font-family: 'Montserrat', sans-serif;
@@ -305,7 +320,7 @@
 		height: 456px;
 		background-color: #fff;
 		// padding: 20px 20px 0 20px;
-		overflow: auto;
+		// overflow: auto;
 		z-index: 55;
 		top: 60px;
 		left: -53px;
@@ -321,26 +336,25 @@
 		display: none;
 	}
 	.header__list-adaptiv{
-		// border-right: 1px solid #E3E3E3;
-		// width: 255px;
+		min-width: 255px;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 		position: relative;
+		// overflow: visible;
 	}
-	.header__list-adaptiv li ul {
+	.header__list-adaptiv ul li ul {
 		display: none;
 		position: absolute;
-		top: 20px;
-		right: -255px;
-		// width: 255px;
+		top: 0;
+		left: 100%;
+		width: 255px;
 		border-right: 1px solid #E3E3E3;
 		height: 100%;
 		background: #fff;
 	}
-	.header__list-li-ad-hover:hover > ul {
-		display: block;
-
+	.header__list-adaptiv ul li:hover > ul {
+		display: block;	
 	}
 	.header__list2 {
 		display: flex;
@@ -454,6 +468,8 @@
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 	margin-right: 5px;
+	// font-size: clamp(rem(18), vw(60), rem(60));
+	font-size: rem(60);
 }
 
 .title-first__p {
