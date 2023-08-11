@@ -120,7 +120,7 @@
 /* Бургер меню */
 
 .container{
-	width: 1145px;
+	width: 1140px;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
@@ -344,7 +344,8 @@
 		flex-direction: column;
 		height: 100%;
 		position: relative;
-		// overflow: visible;
+		z-index: 3;
+
 	}
 	.header__list-adaptiv ul li ul {
 		display: none;
@@ -355,6 +356,8 @@
 		border-right: 1px solid #E3E3E3;
 		height: 100%;
 		background: #fff;
+		box-shadow: 0px 2px 6px 0px #00000026;
+		z-index: 1;
 	}
 	.header__list-adaptiv ul li:hover > ul {
 		display: block;	
@@ -1469,6 +1472,10 @@
 	.header__menu {
 		margin-left: 95px;
 	}
+	.container {
+		width: 1140px;
+	}
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -1493,3 +1500,8 @@
 	}
 }
 
+@media screen and (max-width: 426px) {
+	.banner__header {
+		// height: 375px;
+	}
+}
