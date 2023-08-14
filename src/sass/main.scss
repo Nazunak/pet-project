@@ -57,9 +57,9 @@
 
 .header__icons-block {
 	display: flex;
-	position: absolute;
-	top: 0;
-	right: 0;
+	// position: absolute;
+	// top: 0;
+	// right: 0;
 	align-items: center;
 	height: 100%;
 }
@@ -108,7 +108,7 @@
 .header__menu {
 	display: flex;
 	align-items: center;
-	margin-left: 200px;
+	// margin-left: 200px;
 	height: 75px;
 }
 
@@ -120,7 +120,7 @@
 /* Бургер меню */
 
 .container{
-	width: 1140px;
+	max-width: 80%;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
@@ -133,6 +133,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-left: 10%;
 	height: 75px;
 	background: #ffff;
 	box-shadow: 0px 2px 6px 0px #00000026;
@@ -151,9 +152,10 @@
 .header__body {
 	position: relative;
 	display: flex;
-	// justify-content: space-between;
+	justify-content: space-between;
 	height: 100%;
 	align-items: center;
+	width: 100%;
 }
 
 .header__logo {
@@ -1464,44 +1466,51 @@
 	margin-left: 20px;
 }
 
-@media screen and (max-width: 1300px) {
-	.main,
-	.footer {
-		width: 1300px;
-	}
-	.header__menu {
-		margin-left: 95px;
-	}
-	.container {
-		width: 1140px;
-	}
+// @media screen and (max-width: 1300px) {
+// 	.main,
+// 	.footer {
+// 		width: 100%;
+// 		max-width: 1300px;
+// 	}
+// 	.header__menu {
+// 		margin-left: 95px;
+// 	}
+// 	.container {
+// 		width: 1140px;
+// 	}
 
-}
+// }
 
-@media screen and (max-width: 1200px) {
-	.main,
-	.footer {
-		width: 1200px;
-	}
-	.header__menu {
-		margin-left: 95px;
-	}
-}
+// @media screen and (max-width: 1200px) {
+// 	.main,
+// 	.footer {
+// 		width: 100%;
+// 		max-width: 1200px;
+// 	}
+// 	.header__menu {
+// 		margin-left: 95px;
+// 	}
+// }
 
-@media screen and (max-width: 1024px) {
-	.banner__header {
-		height: 530px;
-	}
-}
+// @media screen and (max-width: 1024px) {
+// 	.main,
+// 	.footer {
+// 		width: 100%;
+// 		max-width: 1024px;
+// 	}
+// 	.banner__header {
+// 		height: 530px;
+// 	}
+// }
 
-@media screen and (max-width: 768px) {
-	.banner__header {
-		height: 500px;
-	}
-}
+// @media screen and (max-width: 768px) {
+// 	.banner__header {
+// 		height: 500px;
+// 	}
+// }
 
-@media screen and (max-width: 426px) {
-	.banner__header {
-		// height: 375px;
-	}
-}
+// @media screen and (max-width: 426px) {
+// 	.banner__header {
+// 		// height: 375px;
+// 	}
+// }
