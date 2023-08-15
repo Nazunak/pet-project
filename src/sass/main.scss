@@ -133,7 +133,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 10%;
+	padding-left: 11%;
 	height: 75px;
 	background: #ffff;
 	box-shadow: 0px 2px 6px 0px #00000026;
@@ -253,26 +253,27 @@
 
 .header__burger.active::after {
 	transform: rotate(-45deg);
-	bottom: 10px;
+	bottom: 9px;
 }
 
 .header__burger-span.active {
 	transform: scale(0);
 }
 
-@media (max-width:768px) {
+@media (max-width:1025px) {
 	body.lock {
 		overflow: hidden;
 	}
 	.header__body {
 		height: 50px;
 		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
+		// flex-direction: row-reverse;
+		justify-content: space-between;
 	}
 	.header__logo {
 		flex: 0 0 40px;
-		margin-left: 40px;
+		margin-left: -35%;
+		order: 2;
 	}
 	.header__burger {
 		display: block;
@@ -280,6 +281,7 @@
 		height: 20px;
 		width: 30px;
 		z-index: 3;
+		order: 1;
 	}
 	.header__burger-span {
 		background-color: #000;
@@ -328,7 +330,7 @@
 		// overflow: auto;
 		z-index: 55;
 		top: 60px;
-		left: -53px;
+		// left: -53px;
 		display: flex;
 		// justify-content: space-around;
 		// transition: all 0.5s ease 1s;
@@ -444,6 +446,9 @@
 			transform: rotate(-45deg);
 		}
 	}
+	.header__icons-block {
+		order: 3;
+	}
 }
 
 /* кінець бургера */
@@ -453,11 +458,8 @@
 }
 .banner__header {
 	background: url('/src/assets/header.png') 0 0/cover no-repeat;
-	max-width: 100%;
 	height: 650px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-around;
+	position: relative;
 }
 
 .baner {
@@ -492,6 +494,9 @@
 .baner__title {
 	display: flex;
 	margin-bottom: 60px;
+	flex-direction: column;
+	position: absolute;
+	bottom: 20px;
 }
 
 .baner__title-first,
@@ -911,7 +916,7 @@
 }
 
 .categories-block__bot {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 .categories-block__item1,
@@ -921,7 +926,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	width: 350px;
+	width: 32%;
 	height: 350px;
 	padding: 0 0 20px 20px;
 }
@@ -943,7 +948,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 0 0 20px 20px;
-	width: 733px;
+	width: 66%;
 	height: 350px;
 	background: url('/src/assets/photo\ \(3\).png') 0 0/cover no-repeat;
 }
@@ -1072,7 +1077,7 @@
 .cooperation__item {
 	box-shadow: 0px 2px 6px 0px #00000026;
 	background: #fff;
-	width: 255px;
+	width: 23%;
 	height: 155px;
 	display: flex;
 	justify-content: space-around;
@@ -1135,8 +1140,12 @@
 }
 
 .news__item-block {
-	width: 350px;
+	width: 32%;
 	border: 1px solid #EFEFEF;
+}
+
+.news__item-img {
+	width: 100%;
 }
 
 .news__item-top {
@@ -1207,17 +1216,19 @@
 .map {
 	background: url('/src/assets/for\ map.png') 0 0/cover no-repeat;
 	height: 350px;
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
 }
 
 .map__items {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding-top: 10%;
 }
 
 .map__item {
-	width: 255px;
+	width: 23%;
 	box-shadow: 0px 2px 6px 0px #00000026;
 	padding: 20px 0 20px 20px;
 	height: 140px;
@@ -1466,51 +1477,35 @@
 	margin-left: 20px;
 }
 
-// @media screen and (max-width: 1300px) {
-// 	.main,
-// 	.footer {
-// 		width: 100%;
-// 		max-width: 1300px;
-// 	}
-// 	.header__menu {
-// 		margin-left: 95px;
-// 	}
-// 	.container {
-// 		width: 1140px;
-// 	}
+@media (max-width: 1251px) {
+	.header {
+		padding-left: 11.5%;
+	}
+	.item-top__icons {
+		position: absolute;
+		top: 7%;
+		right: 5%;
+	}
+	.subscribe__field-input {
+		padding: 10px 45px 10px 10px;
+	}
 
-// }
+}
 
-// @media screen and (max-width: 1200px) {
-// 	.main,
-// 	.footer {
-// 		width: 100%;
-// 		max-width: 1200px;
-// 	}
-// 	.header__menu {
-// 		margin-left: 95px;
-// 	}
-// }
-
-// @media screen and (max-width: 1024px) {
-// 	.main,
-// 	.footer {
-// 		width: 100%;
-// 		max-width: 1024px;
-// 	}
-// 	.banner__header {
-// 		height: 530px;
-// 	}
-// }
-
-// @media screen and (max-width: 768px) {
-// 	.banner__header {
-// 		height: 500px;
-// 	}
-// }
-
-// @media screen and (max-width: 426px) {
-// 	.banner__header {
-// 		// height: 375px;
-// 	}
-// }
+@media (max-width: 1025px) {
+	.banner__features {
+		background: #fff;
+	}
+	.banner__header {
+		height: 565px;
+	}
+	.features-block__item {
+		background: #F5F5F5;
+		width: 30%;
+		margin: 25px 25px 25px 0;
+	}
+	.banner__features-block {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+}
