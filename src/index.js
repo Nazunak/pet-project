@@ -55,6 +55,14 @@ new Swiper('.image-slider', {
     grabCursor: true,
     // відступ між слайдами
     spaceBetween: 20,
+    breakpoints: {
+        1025: {
+            slidesPerView: 3,
+        },
+        769: {
+            slidesPerView: 2,
+        }
+    },
     // слайд мишкою
     // mousewheel: {
     //     sensitivity: 1,

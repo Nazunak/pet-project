@@ -1489,6 +1489,9 @@
 	.subscribe__field-input {
 		padding: 10px 45px 10px 10px;
 	}
+	.header__menu.active {
+		height: auto;
+	}
 
 }
 
@@ -1502,10 +1505,30 @@
 	.features-block__item {
 		background: #F5F5F5;
 		width: 30%;
-		margin: 25px 25px 25px 0;
+		margin: 10px 10px 0px 0px;
+		padding: 10px 0px 10px 10px;
+		height: 100px;
 	}
 	.banner__features-block {
 		flex-wrap: wrap;
 		justify-content: flex-start;
+	}
+	.pricing__item-middle {
+		justify-content: space-around;
+	}
+	.item-bot__bag-button {
+		width: 150px;
+	}
+	.item-bot__info-button{
+		width: 150px;
+	}
+	.categories-block__bot {
+		margin-top: 15px;
+	}
+	.cooperation__item-p {
+		padding-left: 15px;
+	}
+	.cooperation__item-photo {
+		padding-right: 15px;
 	}
 }
